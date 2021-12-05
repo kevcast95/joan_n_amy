@@ -80,3 +80,74 @@
  margin-top: 20px;
 }
 
+.dress_code_contaioner {
+ width: 350px;
+ height: 89%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: white;
+ justify-content: space-between;
+ border-radius: 15px;
+}
+
+.male {
+ background-image: url("../../assets/dress_male.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+.female {
+ background-image: url("../../assets/dress_female.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+.select_gender {
+ width: 350px;
+ height: 150px;
+ display: flex;
+ flex-direction: column;
+ padding: 10px;
+}
+
+.select_gender > img {
+ width: 50px;
+ margin-bottom: 10px;
+}
+
+.select_gender > img:active {
+ opacity: 0.9;
+}
+
+.dress_description {
+ position: relative;
+ width: 350px;
+ height: 120px;
+ background-color: #983434;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 0px 0px 15px 15px;
+ 
+}
+
+.dress_description > img {
+ position: absolute;
+ width: 25px;
+ top: 8px;
+ left: 310px;
+}
+
+.dress_description > img:active {
+ opacity: 0.9;
+}
+
+.dress_description > p {
+ font-size: 20px;
+ font-weight: bold;
+}
+

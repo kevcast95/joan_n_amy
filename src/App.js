@@ -56,15 +56,6 @@ function App() {
             handleView={(view)=>handleView(view)}
           />
         }
-        
-        {/* 
-        <CodeView/>
-        <QuestionView/>
-        <ParentsView/>
-        <VideoView/>
-        <InvitationView/>
-        <InteractionView/> 
-        */}
       </main>
     </div>
   );

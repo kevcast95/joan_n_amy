@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useRef  } from "react";
-import play_video from "../../assets/play_video.png"
-import decoration4 from "../../assets/decoration4.png"
-import video from "../../assets/video.mp4"
-import close_btn from "../../assets/close_btn.png"
+import play_video from "../../assets/play_video.png";
+import decoration4 from "../../assets/decoration4.png";
+import video from "../../assets/video.mp4";
+import close_btn from "../../assets/close_btn.png";
 
 
 import "./Card5.css"
