@@ -1,0 +1,82 @@
+.card7 {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ background-image: url("../../assets/parents_back.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.interaction_view_container {
+ width: 350px;
+ height: 75%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: center;
+ color: white;
+}
+
+.btn_list_container {
+ width: 350px;
+ height: 300px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ margin-left: 30px;
+ margin-bottom: 30px;
+
+}
+
+.interactions_container {
+ position: relative;
+ width: 80%;
+ height: 70px;
+ display: flex;
+ align-items: center;
+ margin-top: 10px;
+}
+
+.icons_int {
+ position: absolute;
+ left: -10px;
+ width: 70px;
+ height: 100%;
+ border-radius: 50%;
+}
+
+.interactions_container > p {
+ width: calc(100% - 30px );
+ height: 60px;
+ background:  linear-gradient(to right, #c68f81 , #e2c2ad ); 
+ border-radius: 10px;
+ text-align: center;
+ color: white;
+ font-size: 18px;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: bold;
+ padding: 17px 0;
+}
+
+.confirm_btn {
+ width: 200px;
+ height: 50px;
+ text-align: center;
+ background-color: #983434;
+ border-radius: 10px;
+ padding: 15px;
+
+}
+
+.interaction_aj {
+ width: 150px;
+ margin-top: 20px;
+}
+

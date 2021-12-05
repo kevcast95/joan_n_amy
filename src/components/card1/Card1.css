@@ -1,0 +1,25 @@
+.card1 {
+ width: 100%;
+ height: 100%;
+ background-image: url("../../assets/first_back.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.couple_names-container > img {
+ width: 350px;
+}
+
+.next_view {
+ width: 50px;
+ margin-top: 80px;
+}
+
+.next_view:active {
+ opacity: 0.7;
+}

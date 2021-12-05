@@ -1,0 +1,142 @@
+.card6 {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ background-image: url("../../assets/counter_back.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.invitation_view_container {
+ width: 350px;
+ height: 75%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ color: white;
+}
+
+.counter_container {
+ position: relative;
+ width: 100%;
+ height: 350px;
+ display: flex;
+ justify-content: flex-end;
+}
+
+.circer_counter1 {
+ position: absolute;
+ width: 150px;
+ top: 70px;
+ right: 110px;
+}
+.circer_counter2 {
+ position: absolute;
+ width: 150px;
+ right: 10px;
+}
+.circer_counter3 {
+ position: absolute;
+ width: 150px;
+ top: 120px;
+ right: 10px;
+}
+.circer_counter4 {
+ position: absolute;
+ width: 100px;
+ top: 190px;
+ right: 110px;
+}
+
+.counter_text_container {
+ font-weight: bold;
+ position: relative;
+ color: white;
+}
+
+.big_numbers {
+ font-size: 40px;
+}
+
+.small_number {
+ font-size: 25px;
+}
+
+.time_text {
+ font-size: 20px;
+}
+
+.days {
+ position: absolute;
+ top: 30px;
+ right: 60px;
+}
+
+.minutes {
+ position: absolute;
+ top: 160px;
+ right: 30px;
+}
+
+.hours {
+ position: absolute;
+ top: 110px;
+ right: 160px;
+}
+
+.seconds {
+ position: absolute;
+ top: 220px;
+ right: 140px;
+}
+
+.date_container {
+ width: 350px;
+ height: 120px;
+ color: #b4706f;
+ text-align: center;
+ margin: auto 0;
+}
+
+.date_container > h1 {
+ font-size: 60px;
+}
+
+.date_container > p {
+ font-size: 30px;
+ font-weight: bold;
+}
+
+.next_container {
+ position: relative;
+ width: 350px;
+
+}
+
+.next_container > div {
+ width: 80%;
+ height: 40px;
+ background-color: #983434;
+ text-align: center;
+ border-radius: 10px;
+ margin: 0 auto;
+ padding: 10px;
+}
+
+
+
+.next_counter_btn{
+ position: absolute;
+ width: 45px;
+ left: 290px;
+ top: -3px;
+}
+
+
