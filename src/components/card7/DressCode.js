@@ -10,7 +10,6 @@ export default function DressCode({selectInteraction}) {
 
  return ( 
   <Fragment>
-   <div className="card7">
     <div className={`${gender ===0? "male":"female"} dress_code_container`}>
      <section className="select_gender">
       <img src={male} alt="male" onClick={()=> setGender(0)}/>
@@ -27,7 +26,6 @@ export default function DressCode({selectInteraction}) {
       </p>
      </section>
     </div>
-   </div>
   </Fragment>
  )
 }
