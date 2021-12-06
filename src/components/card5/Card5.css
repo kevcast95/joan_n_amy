@@ -68,30 +68,53 @@
  width: 350px;
  max-height: 400px;
  height: calc(67% - 100px);
- background-color: #b4706f;
  border-radius: 20px;
 }
 
 .video_invitation_container > h2 {
- width: 350px;
- height: 70px;
+ width: 250px;
+ height: 60px;
+ background-color: #b4706f;
  text-align: center;
  font-size: 29px;
+ border-radius: 10px;
  padding: 10px;
+ margin: 10px auto;
 }
 
 .play_video_container {
- width: 350px;
+ width: 340px;
  height: calc(100% - 70px);
  display: flex;
  justify-content: center;
  align-items: center;
  border-radius: 10px;
  background-color: #983434;
+ margin: 0 auto;
 }
 
 .play_video_container > img {
  width: 70px;
+}
+
+.see_invitation {
+ position: relative;
+ width: 70%;
+ height: 45px;
+ background-color: #b4706f;
+ text-align: center;
+ font-size: 20px;
+ font-weight: 700;
+ border-radius: 10px;
+ margin: 15px auto;
+ padding: 10px;
+}
+
+.see_invitation_btn{
+ position: absolute;
+ width: 47px;
+ left: 209px;
+ top: -1px;
 }
 
 /* MODAL */

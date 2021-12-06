@@ -15,12 +15,12 @@ export default function BtnList({mode, selectInteraction,handleView}) {
   },
   {
    icon: icon_location,
-   Text: "Ubicacion",
+   Text: "Ubicación",
    select: ()=> selectInteraction("location")
   },
   {
    icon: icon_qr,
-   Text: "Lluvia de sobres",
+   Text: "Lluvia de tranferencias",
    select: ()=> selectInteraction("gift")
   }
  ]
@@ -28,12 +28,12 @@ export default function BtnList({mode, selectInteraction,handleView}) {
  const btnsVirtual = [
   {
    icon: icon_live,
-   Text: "Link de la transmision",
+   Text: "Link de la transmisión",
    select: ()=>  alert("Aun no disponible")/* selectInteraction("live") */
   },
   {
    icon: icon_qr,
-   Text: "Lluvia de sobres",
+   Text: "Lluvia de tranferencias",
    select: ()=> selectInteraction("gift")
   }
  ]
@@ -66,10 +66,10 @@ export default function BtnList({mode, selectInteraction,handleView}) {
     </div>
     {mode === "Presencial" &&
       <div className="confirm_btn">
-       Confirmar asistencia
+       No olvides confirmar asistencia
       </div>
     }
-    <div className="confirm_btn" onClick={()=>handleView(1)}>
+    <div className="home_btn" onClick={()=>handleView(1)}>
       Inicio
     </div>
     <img src={interaction_aj} alt="interaction_aj"  className="interaction_aj"/>

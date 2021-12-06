@@ -11,7 +11,9 @@ export default function PreQuestions({handleView}) {
     <div className="parents_names_container">
      <h3 className="parents_name"></h3>
      <p></p>
-     <h3 className="parents_name" style={{textAlign:"center"}}>¿Qué tanto nos conocen?</h3>
+     <h3 className="parents_name" style={{textAlign:"center"}}>
+      Antes de continuar, ¡queremos saber cuánto nos conoces!
+     </h3>
      <p></p>
      <img className="next_question" src={next_q} alt="next_q"  onClick={()=>handleView(3)}/>
     </div>

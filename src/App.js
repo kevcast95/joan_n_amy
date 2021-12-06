@@ -7,6 +7,7 @@ import VideoView from "./components/card5";
 import InvitationView from "./components/card6";
 import InteractionView from "./components/card7";
 import PreQuestions from "./components/card8";
+import DedicatioView from "./components/card9";
 import { guests } from "./data";
 
 
@@ -54,6 +55,11 @@ function App() {
             handleView={(view)=>handleView(view)}
           />
         }
+        {renderView === 9 && 
+          <DedicatioView
+            handleView={(view)=>handleView(view)}
+          />
+        }
         {renderView === 5 && 
           <VideoView
             user={user}
@@ -62,6 +68,7 @@ function App() {
         }
         {renderView === 6 && 
           <InvitationView
+            user={user}
             handleView={(view)=>handleView(view)}
           />
         }

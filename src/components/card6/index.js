@@ -1,15 +1,13 @@
 import React, { Fragment, useState } from "react";
-import counter1 from "../../assets/counter1.png"
-import counter2 from "../../assets/counter2.png"
-import counter3 from "../../assets/counter3.png"
-import decoration4 from "../../assets/decoration4.png"
-import video from "../../assets/video.mp4"
-import next_counter from "../../assets/next_counter.png"
+import counter1 from "../../assets/counter1.png";
+import counter2 from "../../assets/counter2.png";
+import counter3 from "../../assets/counter3.png";
+import next_counter from "../../assets/next_counter.png";
 
 
 import "./Card6.css"
 
-export default function InvitationView({handleView}) {
+export default function InvitationView({handleView,user}) {
 
  const [counter, setCounter] = useState({
   day: 0,
@@ -101,8 +99,21 @@ export default function InvitationView({handleView}) {
      </div>
     </section>
     <section className="date_container">
-     <h1>06 Enero </h1>
-     <p>2022</p>
+      <p className="verse">
+        "Es mejor ser dos que uno, porque ambos pueden ayudarse mutuamente a lograr el éxito" 
+        <br/> 
+        Ecl 4:9
+      </p>
+     <h1>06 Enero 2022 </h1>
+     <p className="time_">4:30 PM</p>
+     <p className="location_text">
+       {user.mode === "Presencial"? 
+        "Hotel Imagine Beach (Calle 6 No. 20-1149 Vía Sabanilla Pto. Colombia)."
+        :
+        "Queremos que te unas a nuestra transmisión en vivo"
+       }
+        
+      </p>
     </section>
     <section className="next_container">
      <div onClick={()=>handleView(7)}>

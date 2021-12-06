@@ -9,12 +9,11 @@ export default function CodeView({handleView, guests,selectUSer}) {
     const [code, setCode] = useState(null)
  
  function filterUser(){
-     console.log("code",code);
      let guest = guests.filter(gst => gst.code === code);
      if(guest[0]!==undefined){
         selectUSer(guest[0])
      }else {
-        alert("Codigo incorrecto")
+        alert("Código incorrecto, intente de nuevo")
         return
     }
     handleView(8)
@@ -26,7 +25,7 @@ export default function CodeView({handleView, guests,selectUSer}) {
     <section className="box_code_decoration">
      <div className="input_btn_container">
       <span className ="code_input_container">
-       <input type="number" onChange={(e)=>setCode(e.target.value)}/>
+       <input type="number" placeholder="Inserte código aquí" onChange={(e)=>setCode(e.target.value)}/>
       </span>
       <img src={insert_code} alt="insert_code" onClick={()=>filterUser()}/>
      </div>

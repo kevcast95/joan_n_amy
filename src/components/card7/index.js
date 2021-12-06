@@ -9,7 +9,6 @@ export default function InteractionView({user,handleView}) {
   const [bntClicked, setBtnClicked] = useState(null);
 
   function selectInteraction(interaction) {
-    console.log("recibiendo,", interaction);
     setBtnClicked(interaction);
   }
 

@@ -3,6 +3,7 @@ import play_video from "../../assets/play_video.png";
 import decoration4 from "../../assets/decoration4.png";
 import video from "../../assets/video.mp4";
 import close_btn from "../../assets/close_btn.png";
+import next_counter from "../../assets/next_q.png"
 
 
 import "./Card5.css"
@@ -37,9 +38,12 @@ export default function VideoView({handleView, user}) {
      </section>
      <section className="video_invitation_container">
       <div className="play_video_container">
-      <img src={play_video} alt="play_video" onClick={()=>setOpenModal(true)} />
+        <img src={play_video} alt="play_video" onClick={()=>setOpenModal(true)} />
       </div>
-      <h2 onClick={()=>handleView(6)}>Ver invitacion</h2>
+      <div className="see_invitation" onClick={()=>handleView(6)}>
+        <p>Siguiente</p>
+        <img src={next_counter} alt="next_counter" className="see_invitation_btn" />
+      </div>
      </section>
      <img src={decoration4} alt="decoration1" />
     </div>
