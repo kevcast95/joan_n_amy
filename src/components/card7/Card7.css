@@ -40,6 +40,7 @@
  width: 80%;
  height: 70px;
  display: flex;
+ text-decoration: none;
  align-items: center;
  margin-top: 10px;
 }
@@ -62,7 +63,8 @@
  font-size: 18px;
  font-family: 'Montserrat', sans-serif;
  font-weight: bold;
- padding: 17px 0;
+ padding: 17px 0px;
+ margin-left: 20px;
 }
 
 .confirm_btn {
@@ -80,7 +82,7 @@
  margin-top: 20px;
 }
 
-.dress_code_contaioner {
+.dress_code_container {
  width: 350px;
  height: 89%;
  display: flex;
@@ -149,5 +151,65 @@
 .dress_description > p {
  font-size: 20px;
  font-weight: bold;
+}
+
+.qr_code_container {
+    width: 350px;
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    border-radius: 15px;
+   }
+
+.qr_container > div > p{
+ text-align: center;
+ font-size: 25px;
+ font-weight: bold;
+}
+
+.qr_container > p{
+ text-align: center;
+}
+
+.pse_close_btn {
+ width: 280px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.link {
+ text-decoration: none;
+ display: inline-block;
+ color: white;
+ position: relative;
+ width: 80%;
+ height: 45px;
+ background:  linear-gradient(to right, #e2c2ad, #c68f81  ); 
+ text-align: center;
+ border-radius: 20px;
+ margin: 0 auto;
+ padding: 10px;
+}
+
+.link > p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pse_btn {
+ position: absolute;
+ width: 45px;
+ left: 190px;
+ top: 0px;
+}
+
+.pse_close_btn > img {
+ width: 40px;
+ margin: 9px;
 }
 

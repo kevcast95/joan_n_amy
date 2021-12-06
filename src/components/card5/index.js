@@ -7,7 +7,7 @@ import close_btn from "../../assets/close_btn.png";
 
 import "./Card5.css"
 
-export default function VideoView({handleView}) {
+export default function VideoView({handleView, user}) {
 
  const [openModal, setOpenModal] = useState(false);
  const vidRef = useRef(null)
@@ -29,10 +29,10 @@ export default function VideoView({handleView}) {
    <div className="card5">
     <div className="video_view_container">
      <section className="invited_contaner">
-      <h3>Kevin Castiblanco</h3>
+      <h3>{user.name}</h3>
       <span>
-       <p>Cupos</p>
-       <p className="quotas">1</p>
+       {user.code === "Presencial" && <p>Cupos</p>  }
+       {user.code === "Presencial" && <p className="quotas">{user.quota}</p> }
       </span>
      </section>
      <section className="video_invitation_container">

@@ -5,7 +5,7 @@ import Gift from "./Gift"
 
 import "./Card7.css"
 
-export default function InteractionView() {
+export default function InteractionView({user,handleView}) {
   const [bntClicked, setBtnClicked] = useState(null);
 
   function selectInteraction(interaction) {
@@ -20,8 +20,9 @@ export default function InteractionView() {
     <div className="interaction_view_container">
       {bntClicked === null &&
         <BtnList 
-          mode={"presencial"}
+          mode={user.mode}
           selectInteraction={(interaction)=>selectInteraction(interaction)} 
+          handleView={handleView}
         />
       }
       {bntClicked === "dress" &&

@@ -5,7 +5,7 @@ import icon_qr from "../../assets/icon_qr.png";
 import icon_live from "../../assets/icon_live.png";
 import interaction_aj from "../../assets/interaction_aj.png";
 
-export default function BtnList({mode, selectInteraction}) {
+export default function BtnList({mode, selectInteraction,handleView}) {
 
  const btnsPresent = [
   {
@@ -29,7 +29,7 @@ export default function BtnList({mode, selectInteraction}) {
   {
    icon: icon_live,
    Text: "Link de la transmision",
-   select: ()=> selectInteraction("live")
+   select: ()=>  alert("Aun no disponible")/* selectInteraction("live") */
   },
   {
    icon: icon_qr,
@@ -38,28 +38,42 @@ export default function BtnList({mode, selectInteraction}) {
   }
  ]
  
- let btnList = mode === "virtual"? btnsVirtual:btnsPresent;
+ let btnList = mode === "Virtual"? btnsVirtual:btnsPresent;
 
  return(
   <Fragment>
     <div className="btn_list_container">
      {
       btnList.map((item,index)=>{
-       return(
-        <div key={index} className="interactions_container" onClick={()=> item.select()} >
-         <img src={item.icon} alt="icons" className="icons_int"/>
-         <p>{item.Text}</p>
-        </div>
-       )
+        if (mode === "Presencial" && index === 1) {
+          return(
+            <a key={index} className="interactions_container" href="https://maps.app.goo.gl/4UYDFaKT82Jacm3a7" target="_blank" >
+             <img src={item.icon} alt="icons" className="icons_int"/>
+             <p>{item.Text}</p>
+            </a>
+           )
+        }else{
+          return(
+            <div key={index} className="interactions_container" onClick={()=> item.select()} >
+             <img src={item.icon} alt="icons" className="icons_int"/>
+             <p>{item.Text}</p>
+            </div>
+          )
+        }
+       
       })
      }
     </div>
-    {mode === "presencial" &&
+    {mode === "Presencial" &&
       <div className="confirm_btn">
        Confirmar asistencia
       </div>
     }
+    <div className="confirm_btn" onClick={()=>handleView(1)}>
+      Inicio
+    </div>
     <img src={interaction_aj} alt="interaction_aj"  className="interaction_aj"/>
+
   </Fragment>
  )
 }

@@ -1,20 +1,34 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import decoration1 from "../../assets/decoration1.png"
 import insert_code from "../../assets/insert_code.png"
 
 
 import "./Card2.css"
 
-export default function CodeView({handleView}) {
+export default function CodeView({handleView, guests,selectUSer}) {
+    const [code, setCode] = useState(null)
+ 
+ function filterUser(){
+     console.log("code",code);
+     let guest = guests.filter(gst => gst.code === code);
+     if(guest[0]!==undefined){
+        selectUSer(guest[0])
+     }else {
+        alert("Codigo incorrecto")
+        return
+    }
+    handleView(8)
+ }   
+
  return ( 
   <Fragment>
    <div className="card2">
     <section className="box_code_decoration">
      <div className="input_btn_container">
       <span className ="code_input_container">
-       <input type="number" />
+       <input type="number" onChange={(e)=>setCode(e.target.value)}/>
       </span>
-      <img src={insert_code} alt="insert_code" onClick={()=>handleView(3)}/>
+      <img src={insert_code} alt="insert_code" onClick={()=>filterUser()}/>
      </div>
      <img src={decoration1} alt="decoration1" />
     </section>

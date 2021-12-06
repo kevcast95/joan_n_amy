@@ -11,7 +11,7 @@ export default function DressCode({selectInteraction}) {
  return ( 
   <Fragment>
    <div className="card7">
-    <div className={`${gender ===0? "male":"female"} dress_code_contaioner`}>
+    <div className={`${gender ===0? "male":"female"} dress_code_container`}>
      <section className="select_gender">
       <img src={male} alt="male" onClick={()=> setGender(0)}/>
       <img src={female} alt="female" onClick={()=> setGender(1)}/>

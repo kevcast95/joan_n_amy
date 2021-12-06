@@ -6,18 +6,27 @@ import ParentsView from "./components/card4";
 import VideoView from "./components/card5";
 import InvitationView from "./components/card6";
 import InteractionView from "./components/card7";
-
+import PreQuestions from "./components/card8";
+import { guests } from "./data";
 
 
 
 import './App.css';
 
 function App() {
-  const [renderView,setRenderView] = useState(1)
+
+  console.log(guests);
+  const [renderView,setRenderView] = useState(2);
+  const [user, setUser] = useState(null); 
   function handleView(view) {
     console.log("view,", view);
     setRenderView(view)
   }
+
+  function selectUSer(user) {
+    setUser(user)
+  }
+  console.log("usermm", user);
   return (
     <div className="main_container">
       <main className="card_container">
@@ -28,6 +37,13 @@ function App() {
         }
         {renderView === 2 && 
           <CodeView
+            guests={guests}
+            handleView={(view)=>handleView(view)}
+            selectUSer={(user)=> selectUSer(user)}
+          />
+        }
+        {renderView === 8 && 
+          <PreQuestions
             handleView={(view)=>handleView(view)}
           />
         }
@@ -43,6 +59,7 @@ function App() {
         }
         {renderView === 5 && 
           <VideoView
+            user={user}
             handleView={(view)=>handleView(view)}
           />
         }
@@ -53,6 +70,7 @@ function App() {
         }
         {renderView === 7 && 
           <InteractionView
+            user={user}
             handleView={(view)=>handleView(view)}
           />
         }
