@@ -14,19 +14,16 @@ import { guests } from "./data";
 import './App.css';
 
 function App() {
-
-  console.log(guests);
-  const [renderView,setRenderView] = useState(2);
+  const [renderView,setRenderView] = useState(1);
   const [user, setUser] = useState(null); 
   function handleView(view) {
-    console.log("view,", view);
     setRenderView(view)
   }
 
   function selectUSer(user) {
     setUser(user)
   }
-  console.log("usermm", user);
+  
   return (
     <div className="main_container">
       <main className="card_container">

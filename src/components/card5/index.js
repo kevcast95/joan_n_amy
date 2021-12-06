@@ -8,7 +8,7 @@ import close_btn from "../../assets/close_btn.png";
 import "./Card5.css"
 
 export default function VideoView({handleView, user}) {
-
+  console.log(user.code);
  const [openModal, setOpenModal] = useState(false);
  const vidRef = useRef(null)
  const modalVideo =()=> {
@@ -31,8 +31,8 @@ export default function VideoView({handleView, user}) {
      <section className="invited_contaner">
       <h3>{user.name}</h3>
       <span>
-       {user.code === "Presencial" && <p>Cupos</p>  }
-       {user.code === "Presencial" && <p className="quotas">{user.quota}</p> }
+       {user.mode === "Presencial" && <p>Cupos</p>  }
+       {user.mode === "Presencial" && <p className="quotas">{user.quota}</p> }
       </span>
      </section>
      <section className="video_invitation_container">
