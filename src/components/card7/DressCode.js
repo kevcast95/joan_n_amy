@@ -19,7 +19,7 @@ export default function DressCode({selectInteraction}) {
       <img src={close_btn} alt="close_btn" onClick={()=> selectInteraction(null)}/>
       <p>
        {gender === 0 ?
-         "Camisa blanco, pantalon beige."
+         "Camisa blanca, pantalon beige."
          :
          "Playa formal (vestidos largos, lisos, preferiblemente colores pasteles)"
        }

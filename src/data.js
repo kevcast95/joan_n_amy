@@ -15,7 +15,7 @@ export const guests = [
     },
     {
         "Invitado de": "Amy",
-        "name": "Daniela Palacio",
+        "name": "Diana Palacio",
         "mode": "Presencial",
         "quota": "2",
         "code": "1141"
@@ -484,9 +484,30 @@ export const guests = [
     },
     {
         "Invitado de": "Joan",
-        "name": "Laura Montoya",
+        "name": "Familia Al-Ahmed Forero",
         "mode": "Virtual",
         "quota": "0",
-        "code": "8309"
+        "code": "3331"
+    },
+    {
+        "Invitado de": "Joan",
+        "name": "Madonia Paz",
+        "mode": "Virtual",
+        "quota": "0",
+        "code": "7852"
+    },
+    {
+        "Invitado de": "Joan",
+        "name": " Familia Juliao & Teffy",
+        "mode": "Virtual",
+        "quota": "0",
+        "code": "4771"
+    },
+    {
+        "Invitado de": "Joan",
+        "name": "",
+        "mode": "Virtual",
+        "quota": "0",
+        "code": "0001"
     }
-    ]
+]
