@@ -509,5 +509,12 @@ export const guests = [
         "mode": "Virtual",
         "quota": "0",
         "code": "0001"
+    },
+    {
+        "Invitado de": "Joan",
+        "name": "Familia Martínez Forero ",
+        "mode": "Virtual",
+        "quota": "0",
+        "code": "9335"
     }
 ]
